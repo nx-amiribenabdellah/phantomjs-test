@@ -1,7 +1,6 @@
 name: 'Phantomjs-CI'
 description: 'test Phantomjs-CI'
 
-
 inputs:
   nameFile:
     description: 'Number of Octocats'
@@ -10,9 +9,13 @@ inputs:
   link:
     description: 'Number of Octocats'
     required: false
-
 runs:
   using: "composite"
   steps:
+
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
     - run: entrypoint.sh
       shell: bash
+
+
