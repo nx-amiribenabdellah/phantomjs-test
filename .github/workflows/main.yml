@@ -1,0 +1,15 @@
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: run commands
+        run: ${GITHUB_WORKSPACE}/entrypoint.sh
+        shell: bash
+      - name: run test
+        run:  phantomjs "${{ github.event.inputs.nameFile }} ${{ github.event.inputs.link }}"
