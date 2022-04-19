@@ -8,4 +8,3 @@ sudo tar xvjf $PHANTOMJS.tar.bz2
 sudo mv $PHANTOMJS /usr/local/share
 sudo ln -sf /usr/local/share/$PHANTOMJS/bin/phantomjs /usr/local/bin
 phantomjs --version
-
