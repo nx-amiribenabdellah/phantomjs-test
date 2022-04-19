@@ -9,4 +9,4 @@ sudo mv $PHANTOMJS /usr/local/share
 sudo ln -sf /usr/local/share/$PHANTOMJS/bin/phantomjs /usr/local/bin
 phantomjs --version
 
-phantomjs INPUT_NAMEFILE INPUT_LINK
+phantomjs github.event.inputs.nameFile github.event.inputs.link
