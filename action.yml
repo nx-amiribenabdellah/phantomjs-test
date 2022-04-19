@@ -1,11 +1,17 @@
 name: 'Phantomjs-CI'
 description: 'test Phantomjs-CI'
 
-runs:
+
+inputs:
+  nameFile:
+    required: true
+
+  link:
+    required: false
+
   using: "composite"
   steps:
 
-    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
-      shell: bash
+
     - run: entrypoint.sh
       shell: bash

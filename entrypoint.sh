@@ -9,5 +9,4 @@ sudo mv $PHANTOMJS /usr/local/share
 sudo ln -sf /usr/local/share/$PHANTOMJS/bin/phantomjs /usr/local/bin
 phantomjs --version
 
-phantomjs loadspeed.js http://www.google.com
-phantomjs screen_capture.js http://google.com 
+phantomjs INPUT_NAMEFILE INPUT_LINK
