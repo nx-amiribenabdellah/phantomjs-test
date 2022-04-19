@@ -4,14 +4,15 @@ description: 'test Phantomjs-CI'
 
 inputs:
   nameFile:
+    description: 'Number of Octocats'
     required: true
 
   link:
+    description: 'Number of Octocats'
     required: false
 
+runs:
   using: "composite"
   steps:
-
-
     - run: entrypoint.sh
       shell: bash
