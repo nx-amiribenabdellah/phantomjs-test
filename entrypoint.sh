@@ -13,4 +13,4 @@ sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
 
 phantomjs --version
 
-phantomjs ./
+phantomjs src/app.js
